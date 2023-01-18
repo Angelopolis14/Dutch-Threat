@@ -1,0 +1,111 @@
+﻿/*------------------------STYLE ABOUT CSS------------------------*/
+/*body {
+    font-family: Tahoma, 'Comic Sans MS',;
+}
+
+input, textarea {
+    font-size: 18px;
+    width: 200px;
+}
+
+input[type=submit]{
+    width: auto;
+}
+
+label {
+    font-size: 16px;
+}
+
+
+#theForm {
+    background-color: #d0d0d0;
+    border: 1px solid none;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    width: 450px;
+    border-radius: 5px;
+}
+
+
+#theForm input[type=submit]{
+    background-color: green;
+    color: white;
+}
+
+ul.products-props{
+    font-size: small;
+}
+
+ul.products-props li{
+    list-style-type: none;
+}
+
+.product-info{
+    border: 1px solid grey;
+    display: inline-block;
+    padding: 5px; 
+    margin: 2px;
+    width: 450px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.product-info button{
+    border: 1px solid black;
+}
+
+.product-info img{
+    margin: 3px;
+    float: left;
+    border: 1px solid black;
+    max-width: 150px;
+}
+
+#logingToggle {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.log-view {
+    padding: 5px;
+    border: 2px black outset;
+    display: inline-block;
+}
+
+.log-view input {
+    width: 150px;
+}
+
+.log-view label {
+    width: 150px;
+    display: inline-block;
+}
+
+.log-view input[type=checkbox], .popup-form input[type=submit] {
+    width: auto;
+}
+
+menu li{
+    display: inline;
+}
+
+menu li::after{
+    content: ' |';
+}
+
+menu li:last-of-type::after{
+    content: "";
+}
+
+.log-view {
+    padding: 5px;
+    border: 2px black outset;
+    display: inline-block;
+}
+
+*/
+
+
+
+/*------------------------STYLE ABOUT BOOTSTRAP------------------------*/

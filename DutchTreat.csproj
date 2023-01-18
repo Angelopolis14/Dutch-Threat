@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\client\3rdpartylicenses.txt" />
+    <Content Remove="wwwroot\client\favicon.ico" />
+    <Content Remove="wwwroot\client\index.html" />
+    <Content Remove="wwwroot\client\main.d9e85bf744aa52c7.js" />
+    <Content Remove="wwwroot\client\polyfills.be126616119fee81.js" />
+    <Content Remove="wwwroot\client\runtime.7ae29a296d479790.js" />
+    <Content Remove="wwwroot\client\styles.ef46db3751d8e999.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="client\dist\client\main.js" />
+    <None Remove="client\dist\client\polyfills.js" />
+    <None Remove="client\dist\client\runtime.js" />
+    <None Remove="client\dist\client\vendor.js" />
+    <None Remove="client\src\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="client\dist\client\main.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="client\dist\client\polyfills.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="client\dist\client\runtime.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="client\dist\client\vendor.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="client\src\polyfills.ts">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Controllers\AppController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Data\DutchContext.cs" />
+    <None Include="wwwroot\client\3rdpartylicenses.txt" />
+    <None Include="wwwroot\client\favicon.ico" />
+    <None Include="wwwroot\client\index.html" />
+    <None Include="wwwroot\client\styles.ef46db3751d8e999.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Shared\_Layout.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties client_4angular_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

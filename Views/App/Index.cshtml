@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-9">
+        <div class="product-info">
+            <img src="~/img/pas.jpg" width="300" height="250" />
+            <h3>Cake</h3>
+            <ul class="products-props">
+                <li>Price $100.00</li>
+                <li>Taste: Cookies & Cream</li>
+                <li>Description: Delicius cookies & cream, cake with Halloween decoration</li>
+            </ul>
+            <button id="buyButton" class="btn btn-success">Buy</button>
+        </div>
+
+        <div id="theForm">
+            <form>
+                <label>Your Name:</label>
+                <br />
+                <input />
+                <br />
+                <label>Email:</label>
+                <br />
+                <input type="email" />
+                <br />
+                <label>Subject:</label>
+                <br />
+                <input type="text" />
+                <br />
+                <label>Message:</label>
+                <br />
+                <textarea rows="4"></textarea>
+                <br />
+                <input type="submit" value="Send Message" />
+            </form>
+        </div>
+        <br />
+        <br />
+        <div>
+            <div id="logingToggle">Login</div>
+            <div class="log-view">
+                <form>
+                    <div>
+                        <label>Username</label>
+                        <input />
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" />
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label>Remember Me</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Login" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <p>This is a fun site to some buying of dutch products.</p>
+    </div>
+</div>
