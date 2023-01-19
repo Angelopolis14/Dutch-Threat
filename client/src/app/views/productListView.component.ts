@@ -1,15 +1,18 @@
-﻿import { Component } from "@angular/core";
+﻿import { OnInit } from "@angular/core";
+import { Component } from "@angular/core";
+import { Store } from "../services/store.service";
 
 @Component({
     selector: "product-list",
     templateUrl: "productListView.component.html"
 })
-export default class ProductListView {
-    public products = [{
-        title: "Nike Air Force 1",
-        price: "2000.00"
-    }, {
-        title: "Jordan 4",
-        price: "5000.00"
-    }];
+export default class ProductListView implements OnInit{
+    
+
+    constructor(public store: Store) {
+    }
+    ngOnInit(): void {
+        this.store.loadProducts()
+            .subscribe(); //<-Kicks off the operation
+    }
 }
