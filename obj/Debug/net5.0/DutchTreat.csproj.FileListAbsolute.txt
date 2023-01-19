@@ -809,3 +809,4 @@ C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\DutchT
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\ref\DutchTreat.dll
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\DutchTreat.pdb
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\DutchTreat.genruntimeconfig.cache
+C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\DutchTreat.csproj.AssemblyReference.cache
