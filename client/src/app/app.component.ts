@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { Title } from "@angular/platform-browser";
 
 @Component({
     selector: 'the-shop',
@@ -31,5 +30,4 @@ import { Title } from "@angular/platform-browser";
 export class AppComponent {
     title = 'Dutche';
 }
-
-console.log(Title);
+console.log("aNGULAR JADKALSDJAKJ");

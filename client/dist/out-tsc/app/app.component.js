@@ -1,6 +1,5 @@
 import { __decorate } from "tslib";
 import { Component } from "@angular/core";
-import { Title } from "@angular/platform-browser";
 let AppComponent = class AppComponent {
     constructor() {
         this.title = 'Dutche';
@@ -36,5 +35,5 @@ AppComponent = __decorate([
     })
 ], AppComponent);
 export { AppComponent };
-console.log(Title);
+console.log("aNGULAR JADKALSDJAKJ");
 //# sourceMappingURL=app.component.js.map

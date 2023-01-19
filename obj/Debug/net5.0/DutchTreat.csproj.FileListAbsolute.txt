@@ -777,7 +777,6 @@ C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\bin\Debug\net5.0\runtim
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\DutchTreat.csproj.AssemblyReference.cache
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\DutchTreat.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\DutchTreat.AssemblyInfoInputs.cache
 C:\Users\Alguien\Source\Repos\Angelopolis14\Dutch-Threat\obj\Debug\net5.0\DutchTreat.AssemblyInfo.cs
