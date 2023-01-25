@@ -1,10 +1,10 @@
-﻿import { OnInit } from "@angular/core";
-import { Component } from "@angular/core";
+﻿import { OnInit, Component } from "@angular/core";
 import { Store } from "../services/store.service";
 
 @Component({
     selector: "product-list",
-    templateUrl: "productListView.component.html"
+    templateUrl: "productListView.component.html",
+    styleUrls:["productListView.component.css"]
 })
 export default class ProductListView implements OnInit{
     
@@ -13,6 +13,8 @@ export default class ProductListView implements OnInit{
     }
     ngOnInit(): void {
         this.store.loadProducts()
-            .subscribe(); //<-Kicks off the operation
+            .subscribe(() => {
+            // do someting
+        }); //<-Kicks off the operation
     }
 }

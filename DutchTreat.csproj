@@ -47,10 +47,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="Data\DutchContext.cs" />
     <None Include="wwwroot\client\3rdpartylicenses.txt" />
     <None Include="wwwroot\client\favicon.ico" />
