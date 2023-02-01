@@ -41,7 +41,7 @@ export class Store {
             }));
     }
 
-    addToorder(product: Product) {
+    addToOrder(product: Product) {
         let item: OrderItem;
 
         item = this.order.items.find(o => o.productId === product.id);
