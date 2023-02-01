@@ -1,4 +1,4 @@
-﻿import { HttpClient } from "@angular/common/http";
+﻿import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
@@ -13,10 +13,9 @@ export class Store {
     }
 
     public products: Product[] = [];
-
     public order: Order = new Order();
-
-
+    public token = "";
+    public expiration = new Date();
 
     loadProducts(): Observable<void> {
         return this.http.get<[]>("/api/products")
@@ -26,6 +25,21 @@ export class Store {
             }));
     }
 
+
+    get loginRequired(): boolean {
+        return this.token.length === 0 || this.expiration < new Date();
+    }
+
+    checkout() {
+        const headers = new HttpHeaders().set("Authorization", `Bearer ${this.token}`);
+
+        return this.http.post("/api/orders", this.order, {
+            headers: headers
+        })
+            .pipe(map(() => {
+                this.order = new Order();
+            }));
+    }
 
     addToorder(product: Product) {
         let item: OrderItem;

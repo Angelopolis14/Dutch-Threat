@@ -4,7 +4,7 @@ var Shopper = /** @class */ (function () {
         this.lastName = lastName;
     }
     Shopper.prototype.showName = function () {
-        alert(this.firstName + " " + this.lastName);
+        alert("".concat(this.firstName, " ").concat(this.lastName));
     };
     return Shopper;
 }());

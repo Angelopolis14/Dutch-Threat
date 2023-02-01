@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jsconE2Dspy7Bog3KS05uUTZaDGPgvvfToyn7IyUNhjSLu4nDP3WPieElKu1v/pqqBElxtA2L33wAHItB3hLzQ==",
+  "dgSpecHash": "we1PE9pLpp6efijXwiAvh7wZYpRM36BqxTq7nMchTGjr2XS3Gqk8gSfjCcRtQiPAN2apSfhruCouoNATTt8FUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alguien\\Source\\Repos\\Angelopolis14\\Dutch-Threat\\DutchTreat.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,7 @@
     "C:\\Users\\Alguien\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.6.0\\microsoft.identitymodel.tokens.5.6.0.nupkg.sha512",
     "C:\\Users\\Alguien\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Alguien\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\Alguien\\.nuget\\packages\\microsoft.typescript.msbuild\\4.9.4\\microsoft.typescript.msbuild.4.9.4.nupkg.sha512",
     "C:\\Users\\Alguien\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Alguien\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Alguien\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",

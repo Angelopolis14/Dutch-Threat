@@ -4,14 +4,13 @@
     "\\client",
     "\\client\\src",
     "\\client\\src\\app",
-    "\\client\\src\\app\\shared",
-    "\\Data",
-    "\\Data\\Entities",
-    "\\Views",
-    "\\Views\\Shared",
+    "\\client\\src\\app\\pages",
+    "\\client\\src\\app\\router",
+    "\\client\\src\\app\\services",
+    "\\client\\src\\app\\views",
     "\\wwwroot",
-    "\\wwwroot\\client"
+    "\\wwwroot\\css"
   ],
-  "SelectedNode": "\\client\\src\\app\\views\\cartView.component.html",
+  "SelectedNode": "\\client\\src\\app\\router\\index.ts",
   "PreviewInSolutionExplorer": false
 }
