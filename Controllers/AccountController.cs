@@ -81,36 +81,43 @@ namespace DutchTreat.Controllers
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByNameAsync(model.Username);
+
                 if (user != null)
                 {
                     var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
+
                     if (result.Succeeded)
                     {
                         // Create the Token
                         var claims = new[]
                         {
-                          new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-                          new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                          new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName)
+              new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+              new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+              new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName)
+            };
+
+                        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"]));
+
+                        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+                        var token = new JwtSecurityToken(
+                          _config["Tokens:Issuer"],
+                          _config["Tokens:Audience"],
+                          claims,
+                          expires: DateTime.UtcNow.AddMinutes(30),
+                          signingCredentials: creds);
+
+                        var results = new
+                        {
+                            token = new JwtSecurityTokenHandler().WriteToken(token),
+                            expiration = token.ValidTo
                         };
 
-                        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Token:Key"]));
-                        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-                        var token = new JwtSecurityToken(
-                          _config["Token:Issuer"],
-                          _config["Token:Audience"],
-                          claims,
-                          signingCredentials: creds,
-                          expires: DateTime.UtcNow.AddMinutes(20));
-
-                        return Created("", new
-                        {
-                            token=new JwtSecurityTokenHandler().WriteToken(token),
-                            expiration=token.ValidTo
-                        });
+                        return Created("", results);
                     }
                 }
             }
+
             return BadRequest();
         }
     }

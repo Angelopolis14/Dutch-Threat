@@ -9,14 +9,14 @@
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" #password="ngModel" name="password" [(ngModel)]="creds.password" required />
+        <input type="password" class="form-control" name="password" #password="ngModel" [(ngModel)]="creds.password" required />
         <div class="text-danger" *ngIf="password.touched && password.invalid && password.errors.required">Required</div>
       </div>
       <div class="form-group">
-        <input type="submit" class="btn btn-success" value="Login" [disabled]="username.invalid || password.invalid" />
+        <input type="submit" class="btn btn-success" value="Login" [disabled]="username.invalid ||password.invalid" />
         <a href="#" class="btn btn-default">Cancel</a>
       </div>
     </form>
-    <div>{{ creds | json }}</div>
+    {{creds | json}}
   </div>
-</div>
+</div> 

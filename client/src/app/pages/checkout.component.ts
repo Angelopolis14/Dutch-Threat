@@ -14,8 +14,8 @@ export class CheckoutPage {
   constructor(public store: Store, private router: Router) {
   }
 
-  onCheckout() {
-    this.errorMessage = "";
+    onCheckout() {
+        this.errorMessage = "";
     this.store.checkout()
       .subscribe(() => {
         this.router.navigate(["/"]);
