@@ -7,6 +7,9 @@
     "@angular-devkit/schematics": "^15.1.1",
     "@schematics/update": "^0.1102.18",
     "browserslist": "^4.21.4",
-    "environments": "^1.2.7"
+    "environments": "^1.2.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
   }
 }
